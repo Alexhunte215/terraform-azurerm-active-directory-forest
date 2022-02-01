@@ -1,26 +1,26 @@
 variable "resource_group_name" {
   description = "A container that holds related resources for an Azure solution"
-  default     = ""
+  default     = "ah-test"
 }
 
 variable "location" {
   description = "The location/region to keep all your network resources. To get the list of all locations with table format from azure cli, run 'az account list-locations -o table'"
-  default     = ""
+  default     = "uksouth"
 }
 
 variable "virtual_network_name" {
   description = "The name of the virtual network"
-  default     = ""
+  default     = "ah-nic"
 }
 
 variable "subnet_name" {
   description = "The name of the subnet to use in VM scale set"
-  default     = ""
+  default     = "customer"
 }
 
 variable "virtual_machine_name" {
   description = "The name of the virtual machine."
-  default     = ""
+  default     = "dc"
 }
 
 variable "os_flavor" {
@@ -85,7 +85,7 @@ variable "enable_public_ip_address" {
 
 variable "source_image_id" {
   description = "The ID of an Image which each Virtual Machine should be based on"
-  default     = null
+  default     = "windows2019dc"
 }
 
 variable "windows_distribution_list" {
@@ -158,12 +158,12 @@ variable "license_type" {
 
 variable "active_directory_domain" {
   description = "The name of the Active Directory domain, for example `consoto.com`"
-  default     = ""
+  default     = "new-orki"
 }
 
 variable "active_directory_netbios_name" {
   description = "The netbios name of the Active Directory domain, for example `consoto`"
-  default     = ""
+  default     = "neworki"
 }
 
 variable "tags" {
